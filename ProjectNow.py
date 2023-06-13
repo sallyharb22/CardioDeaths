@@ -24,11 +24,11 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-df = pd.read_excel('/Users/sallyharb/Desktop/ShareOfDeathsByCause-2019.xlsx')
-df1 = pd.read_excel('/Users/sallyharb/Desktop/CardioDeathRatesPer100000People.xlsx')
-df2 = pd.read_excel('/Users/sallyharb/Desktop/Deathratebyage.xlsx')
-df3 = pd.read_csv('/Users/sallyharb/Desktop/MapDeathRates.csv')
-df4 = pd.read_excel('/Users/sallyharb/Desktop/RiskFactor.xlsx')
+df = pd.read_excel('ShareOfDeathsByCause-2019.xlsx')
+df1 = pd.read_excel('CardioDeathRatesPer100000People.xlsx')
+df2 = pd.read_excel('Deathratebyage.xlsx')
+df3 = pd.read_csv('MapDeathRates.csv')
+df4 = pd.read_excel('RiskFactor.xlsx')
 
 # Sort the dataframe by the "Percentages" column in descending order
 df_sorted = df.sort_values(by="Percentages", ascending=True)
